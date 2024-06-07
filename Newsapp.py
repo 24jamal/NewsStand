@@ -8,8 +8,8 @@ def run_streamlit_script(script_name):
     subprocess.Popen(["streamlit", "run", f"{script_name}.py"])
 
 # MongoDB connection
-client = MongoClient("mongodb://localhost:27017/")
-db = client["news_database1"]
+client = MongoClient("mongodb+srv://jamalceg123:p16QLbUdxhXHU0vb@stocksenseatlas.387yu8u.mongodb.net/")
+db = client["News_DataBase_Atlas"]
 
 # Function to retrieve articles for a given company within a date range and optionally filtered by search query
 def retrieve_articles_within_date_range(company, start_date, end_date, page_index, search_query=None):
